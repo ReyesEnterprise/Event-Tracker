@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.dashboard__hero::before {
+  content: "";
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  background: #3b82f6;
+  opacity: 0.08;
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* HERO SECTION */
+.dashboard__hero {
+  /* MULTIPLE BACKGROUNDS */
+  background-image:
+    url("/src/assets/background-stars.svg"),
+    url("/src/assets/background-dots.svg");
+
+  background-repeat: no-repeat, no-repeat;
+
+  /* position them */
+  background-position:
+    left 20% top 30%,
+    /* stars */ right 20% bottom 30%; /* dots */
+
+  position: relative;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.dashboard__logo {
+  margin-bottom: 20px;
+  height: 200px;
+  padding-top: 20vh;
+}
+
+.dashboard__header {
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* THIS triggers medium file */
+  color: #1e3a5f;
+  margin: 25px 0;
+}
+
+.dashboard_text {
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.dashboard__event {
+  color: var(--colordashboard);
+  margin-right: 20px;
+}
+
+.dashboard__tracker {
+  color: var(--color-accent);
+}
+
+.dashboard_message {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}

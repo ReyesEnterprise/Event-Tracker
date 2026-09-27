@@ -1,7 +1,6 @@
 import "./Dashboard.css";
 
 import logo from "../../assets/Event_logo-thin.png";
-import calenderIcon from "../../assets/icon_calender.svg";
 import FeatureList from "../FeatureList/FeatureList";
 
 function Dashboard() {

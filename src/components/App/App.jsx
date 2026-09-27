@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import reactLogo from "../../assets/react.svg";
-
+// my compnents
 import "./App.css";
 import Header from "../Header/Header";
 import Dashboard from "../Dashboard/Dashboard";

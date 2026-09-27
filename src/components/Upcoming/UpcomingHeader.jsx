@@ -1,33 +1,33 @@
 import "./UpcomingHeader.css";
-import julyImg from "../../assets/react.svg"; // example
+import monthThemes from "../../data/monthThemes";
 
 function UpcomingHeader() {
-  const date = new Date();
-  const currentMonth = date.toLocaleString("default", { month: "long" });
-
-  const monthsData = [
-    { name: "July", image: julyImg },
-    // add more later
-  ];
-
-  const currentMonthData = monthsData.find(
-    (month) => month.name === currentMonth,
-  );
+  const currentMonthIndex = new Date().getMonth();
+  const currentMonth = monthThemes[currentMonthIndex];
 
   return (
     <div className="container">
       <div className="upcoming__header">
+        <img
+          src={currentMonth.overlay}
+          alt={currentMonth.name}
+          aria-hidden="true"
+          className="upcoming__overlay"
+        />
+
         <div className="upcoming__text">
           <p>Here’s what’s coming up in</p>
-          <h1>{currentMonth}</h1>
+          <h1>{currentMonth.name}</h1>
         </div>
 
-        {currentMonthData && (
-          <img
-            src={currentMonthData.image}
-            alt={currentMonth}
-            className="upcoming__image"
-          />
+        {currentMonth.image && (
+          <div className="upcoming__artwork">
+            <img
+              src={currentMonth.image}
+              alt={currentMonth.imageAlt}
+              className="upcoming__image"
+            />
+          </div>
         )}
       </div>
     </div>

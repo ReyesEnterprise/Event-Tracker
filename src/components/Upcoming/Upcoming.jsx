@@ -17,7 +17,6 @@ function Upcoming() {
   return (
     <div className="upcoming">
       <UpcomingHeader />
-
       <div className="upcoming__content">
         <UpcomingSummary events={events} />
         <EventList events={events} />

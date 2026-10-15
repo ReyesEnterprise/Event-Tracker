@@ -22,6 +22,28 @@
   font-weight: 600;
 }
 
+.addIconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #292569;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: white;
+}
+
+.addIconBtn:hover {
+  color: white;
+}
+
+.addIconBtn img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
 @media screen and (max-width: 950px) {
   .menu {
     flex-direction: column;

@@ -1,0 +1,141 @@
+.eventModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.eventModal__content {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.eventModal__title {
+  margin: 0 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.eventModal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eventModal__label {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.eventModal__input,
+.eventModal__select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+.eventModal__textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.eventModal__input:focus,
+.eventModal__select:focus,
+.eventModal__textarea:focus {
+  outline: none;
+  border-color: #477dff;
+  box-shadow: 0 0 0 3px rgba(71, 125, 255, 0.15);
+}
+
+.eventModal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.eventModal__button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.eventModal__button--cancel {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+
+.eventModal__button--cancel:hover {
+  background-color: #e3e3e3;
+}
+
+.eventModal__button--submit {
+  background-color: #477dff;
+  color: #ffffff;
+}
+
+.eventModal__button--submit:hover {
+  background-color: #3568e8;
+}
+
+@media screen and (max-width: 500px) {
+  .eventModal {
+    padding: 12px;
+  }
+
+  .eventModal__content {
+    padding: 22px;
+  }
+
+  .eventModal__title {
+    font-size: 21px;
+  }
+
+  .eventModal__actions {
+    flex-direction: column-reverse;
+  }
+
+  .eventModal__button {
+    width: 100%;
+  }
+}

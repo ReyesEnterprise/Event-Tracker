@@ -17,18 +17,14 @@ function NavBar() {
       <NavLink to="/" className={customClassName()}>
         Home
       </NavLink>
-      <NavLink to="/upcoming" className={customClassName()}>
-        UpComing
+      <NavLink to="/Events" className={customClassName()}>
+        Events
       </NavLink>
-      <NavLink to="/allevents" className={customClassName()}>
-        ALL Events
-      </NavLink>
-      <NavLink to="/categories" className={customClassName()}>
+      <NavLink to="/Calendar" className={customClassName()}>
         Calendar
       </NavLink>
       <NavLink to="/addevents" className={customClassName("addIconBtn")}>
-        <img src={addIcon} alt="" />
-        Add Events
+        Sign in
       </NavLink>
     </nav>
   );

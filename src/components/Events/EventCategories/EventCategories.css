@@ -1,0 +1,164 @@
+/* Main categories container */
+
+.eventCategories {
+  flex: 2;
+  min-width: 0;
+  padding: 24px;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border: 1px solid #f1f3f9;
+  border-radius: 20px;
+
+  box-shadow: 0 4px 16px rgba(23, 37, 84, 0.04);
+}
+
+/* Categories heading */
+
+.eventCategories__title {
+  margin: 0 0 20px;
+
+  color: #172554;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* List */
+
+.eventCategories__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* List item */
+
+.eventCategories__item {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base button styles */
+
+.eventCategories__button {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 12px 14px;
+  box-sizing: border-box;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  background-color: #f8fafc;
+  color: #475569;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover effect */
+
+.eventCategories__button:hover {
+  transform: translateX(3px);
+}
+
+/* Keyboard accessibility */
+
+.eventCategories__button:focus-visible {
+  outline: 2px solid #6955e8;
+  outline-offset: 3px;
+}
+
+/* All Events */
+
+.eventCategories__button--all {
+  background-color: #477dff;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.eventCategories__button--all:hover {
+  background-color: #2060f5;
+}
+
+/* Birthdays */
+
+.eventCategories__button--birthday {
+  background-color: #fff0f5;
+  color: #e83e79;
+}
+
+.eventCategories__button--birthday:hover {
+  background-color: #ffe0eb;
+}
+
+/* Family */
+
+.eventCategories__button--family {
+  background-color: #e5faf5;
+  color: #0c9b83;
+}
+
+.eventCategories__button--family:hover {
+  background-color: #d0f5eb;
+}
+
+/* Work */
+
+.eventCategories__button--work {
+  background-color: #f0edff;
+  color: #7051d8;
+}
+
+.eventCategories__button--work:hover {
+  background-color: #e3dcff;
+}
+
+/* Holidays */
+
+.eventCategories__button--holiday {
+  background-color: #eaf5ff;
+  color: #1689e8;
+}
+
+.eventCategories__button--holiday:hover {
+  background-color: #d9edff;
+}
+
+/* Fun */
+
+.eventCategories__button--fun {
+  background-color: #fff5e8;
+  color: #e88a19;
+}
+
+.eventCategories__button--fun:hover {
+  background-color: #ffebd2;
+}
+
+/* Other */
+
+.eventCategories__button--other {
+  background-color: #f1f3f9;
+  color: #64748b;
+}
+
+.eventCategories__button--other:hover {
+  background-color: #e4e8f1;
+}

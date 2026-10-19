@@ -3,9 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 // my compnents
 import "./App.css";
 import Header from "../Header/Header";
-import Dashboard from "../Dashboard/Dashboard";
-import Upcoming from "../Upcoming/Upcoming";
-import Categories from "../Categories/Categories";
+import Home from "../Home/Home";
+import Events from "../Events/Events";
+import Calendar from "../Calendar/Calendar";
 
 function App() {
   const location = useLocation();
@@ -15,11 +15,11 @@ function App() {
       case "/":
         return "page page--dashboard";
 
-      case "/upcoming":
-        return "page page--upcoming";
+      case "/Events":
+        return "page page--Events";
 
-      case "/categories":
-        return "page page--categories";
+      case "/Calendar":
+        return "page page--Calendar";
 
       default:
         return "page";
@@ -31,9 +31,10 @@ function App() {
       <div className={getPageClass()}>
         <Header />
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/upcoming" element={<Upcoming />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/events" element={<Events />} />
+          <Route path="/Calendar" element={<Calendar />} />
         </Routes>
       </div>
     </div>

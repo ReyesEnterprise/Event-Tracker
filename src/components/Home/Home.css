@@ -10,12 +10,12 @@
   font-weight: 700;
 }
 
-.dashboard {
+.home {
   min-height: 100vh;
   padding-top: 30px;
 }
 
-.dashboard__hero::before {
+.home__hero::before {
   content: "";
   position: absolute;
 
@@ -32,7 +32,7 @@
 }
 
 /* HERO SECTION */
-.dashboard__hero {
+.home__hero {
   /* MULTIPLE BACKGROUNDS */
   background-image:
     url("/src/assets/background-stars.svg"),
@@ -56,13 +56,13 @@
   text-align: center;
 }
 
-.dashboard__logo {
+.home__logo {
   margin-bottom: 20px;
   height: 200px;
   padding-top: 20vh;
 }
 
-.dashboard__header {
+.home__header {
   font-size: 100px;
   font-family: "Poppins", sans-serif;
   font-weight: 700; /* THIS triggers medium file */
@@ -70,23 +70,23 @@
   margin: 25px 0;
 }
 
-.dashboard_text {
+.home_text {
   font-size: 80px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 0 0 20px 0;
 }
 
-.dashboard__event {
-  color: var(--colordashboard);
+.home__event {
+  color: var(--colorhome);
   margin-right: 20px;
 }
 
-.dashboard__tracker {
+.home__tracker {
   color: var(--color-accent);
 }
 
-.dashboard_message {
+.home_message {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;

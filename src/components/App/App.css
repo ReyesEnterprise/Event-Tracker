@@ -22,7 +22,7 @@
   background-color: #e4eef8;
 }
 
-.page--upcoming {
+.page--Events {
   min-height: 100vh;
   background: linear-gradient(
     180deg,
@@ -33,7 +33,7 @@
   );
 }
 
-.page--categories {
+.page--Calendar {
   background-color: #866f12;
 }
 

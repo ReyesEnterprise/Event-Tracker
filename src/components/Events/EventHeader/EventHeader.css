@@ -1,42 +1,41 @@
-.upcoming__header {
+.eventsHeader {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  min-height: 220px;
-  padding: 24px;
+  min-height: 180px;
   overflow: hidden;
   position: relative;
 }
 
-.upcoming__text {
+.eventsHeader__text {
   position: relative;
   z-index: 1;
 }
 
-.upcoming__text p {
+.eventsHeader__text p {
   font-size: 1rem;
   margin: 0 0 0.25rem;
 }
 
-.upcoming__text h1 {
+.eventsHeader__text h1 {
   font-size: clamp(3.5rem, 10vw, 7rem);
   font-weight: 700;
   line-height: 0.95;
   margin: 0;
 }
 
-.upcoming__artwork {
+.eventsHeader__artwork {
   min-width: 180px;
   position: relative;
   z-index: 1;
 }
 
-.upcoming__image {
+.eventsHeader__image {
   display: block;
   width: 100%;
 }
 
-.upcoming__overlay {
+.eventsHeader__overlay {
   height: 150%;
   left: 0;
   max-width: none;
@@ -50,14 +49,14 @@
 }
 
 @media (max-width: 640px) {
-  .upcoming__header {
+  .eventsHeader__header {
     align-items: flex-start;
     flex-direction: column;
     gap: 1.5rem;
     padding-top: 2rem;
   }
 
-  .upcoming__artwork {
+  .eventsHeader__artwork {
     align-self: flex-end;
     max-width: 280px;
     width: 85%;

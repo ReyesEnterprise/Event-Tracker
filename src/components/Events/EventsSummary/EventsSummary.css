@@ -1,0 +1,357 @@
+/* Main event summary section */
+
+.eventSummary {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.eventSummary__title {
+  margin: 0 0 24px;
+  color: #172554;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* List containing all event rows */
+
+.eventSummary__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Individual event row */
+
+.eventSummary__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 14px 18px;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border: 1px solid #f1f3f9;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(23, 37, 84, 0.04);
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.eventSummary__item:hover {
+  box-shadow: 0 6px 20px rgba(23, 37, 84, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Category icon container */
+
+.eventSummary__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 88px;
+  width: 88px;
+  height: 88px;
+
+  border-radius: 20px;
+}
+
+.eventSummary__icon span {
+  font-size: 38px;
+  line-height: 1;
+}
+
+/* Icon background colors */
+
+.eventSummary__icon--birthday {
+  background-color: #fff0f5;
+}
+
+.eventSummary__icon--anniversary {
+  background-color: #e5faf5;
+}
+
+.eventSummary__icon--holiday {
+  background-color: #eaf5ff;
+}
+
+.eventSummary__icon--event {
+  background-color: #fff5e8;
+}
+
+/* Family */
+
+.eventSummary__icon--family {
+  background-color: #e5faf5;
+}
+
+/* Work */
+
+.eventSummary__icon--work {
+  background-color: #f0edff;
+}
+
+/* Fun */
+
+.eventSummary__icon--fun {
+  background-color: #fff5e8;
+}
+
+/* Other */
+
+.eventSummary__icon--other {
+  background-color: #f1f3f9;
+}
+
+/* Event information container */
+
+.eventSummary__details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+
+  min-width: 0;
+}
+
+/* Title and category pill */
+
+.eventSummary__heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.eventSummary__event-title {
+  margin: 0;
+  color: #172554;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Category pill */
+
+.eventSummary__category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 12px;
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.eventSummary__category--birthday {
+  color: #ec407a;
+  background-color: #ffe6ef;
+}
+
+.eventSummary__category--anniversary {
+  color: #0ca88e;
+  background-color: #dff8f2;
+}
+
+.eventSummary__category--holiday {
+  color: #1689e8;
+  background-color: #e3f2ff;
+}
+
+/* Family */
+
+.eventSummary__category--family {
+  color: #0c9b83;
+  background-color: #dff8f2;
+}
+
+/* Work */
+
+.eventSummary__category--work {
+  color: #7051d8;
+  background-color: #e3dcff;
+}
+
+/* Fun */
+
+.eventSummary__category--fun {
+  color: #e88a19;
+  background-color: #ffebd2;
+}
+
+/* Other */
+
+.eventSummary__category--other {
+  color: #64748b;
+  background-color: #e4e8f1;
+}
+
+/* Notes / short event description */
+
+.eventSummary__notes {
+  margin: 0;
+  color: #7b849b;
+  font-size: 13px;
+  line-height: 1.5;
+
+  /* Keep the description short. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+/* Date section */
+
+.eventSummary__date {
+  display: flex;
+  flex: 0 0 76px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  align-self: stretch;
+  min-width: 0;
+  padding-left: 18px;
+
+  border-left: 2px solid #f0f2f8;
+  text-align: center;
+}
+
+/* Month */
+
+.eventSummary__month {
+  color: #7b849b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* Day number */
+
+.eventSummary__day-number {
+  color: #172554;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Weekday */
+
+.eventSummary__weekday {
+  color: #7b849b;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Arrow */
+
+.eventSummary__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 18px;
+
+  color: #7b849b;
+  font-size: 30px;
+  line-height: 1;
+}
+
+/* Empty state */
+
+.eventSummary__empty {
+  padding: 40px 20px;
+  border: 1px dashed #dce2f0;
+  border-radius: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.eventSummary__message {
+  margin: 0 0 8px;
+  color: #172554;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.eventSummary__description {
+  margin: 0;
+  color: #7b849b;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .eventSummary__item {
+    gap: 12px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .eventSummary__icon {
+    flex-basis: 56px;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+  }
+
+  .eventSummary__icon span {
+    font-size: 28px;
+  }
+
+  .eventSummary__heading {
+    gap: 6px;
+  }
+
+  .eventSummary__event-title {
+    font-size: 14px;
+  }
+
+  .eventSummary__category {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .eventSummary__notes {
+    font-size: 12px;
+  }
+
+  .eventSummary__date {
+    flex-basis: 48px;
+    padding-left: 10px;
+  }
+
+  .eventSummary__month {
+    font-size: 12px;
+  }
+
+  .eventSummary__day-number {
+    font-size: 25px;
+  }
+
+  .eventSummary__weekday {
+    font-size: 11px;
+  }
+
+  .eventSummary__arrow {
+    flex-basis: 10px;
+    font-size: 24px;
+  }
+}
